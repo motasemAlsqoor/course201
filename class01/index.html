@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: deepskyblue;
+            background-color: lavenderblush;
+        }
+        #content {
+            border: black;
+            padding: 8px;
+            color: rgb(235, 199, 211);
+            background-color: rgb(228, 96, 96);
+        }
+        p {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>class01-lab1a</h1>
+    </header>
+
+   <main id="content">
+       <article>
+            <p id ="answers1" style="background-color: black;color: blanchedalmond;"> </p>
+            <p id ="answers2" style="background-color: rgb(139, 90, 90);color: blanchedalmond;"> </p>
+            <p id ="answers3" style="background-color: rgb(230, 27, 27);color: rgb(21, 15, 102);"> </p>
+            <p id ="answers4" style="background-color: rgb(78, 141, 86);color: rgb(224, 213, 195);"> </p>
+       </article>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+        var firstAnswer=prompt("did you like the summer night [y,n]");
+        var seconedAnswer=prompt("Are you afraid of heights? [y,n]");
+        var thirdAnswer=prompt("Do you think a lot about the future? [y,n]");
+        var fourthAnswer=prompt("Are you a fan of adventures? [y,n]");
+        
+        if(firstAnswer=="y"){
+            document.getElementById("answers1").innerHTML = " how would any one with brain hate the summer nights  . great answer<br/> ";
+        }else{
+            document.getElementById("answers1").innerHTML = " i also prefer the winter night  , great answer<br/> ";    
+        }//end if
+
+        if(seconedAnswer=="y"){
+            document.getElementById("answers2").innerHTML = " how would any one with brain do not hate the heights , great answer <br/>";
+        }else{
+            document.getElementById("answers2").innerHTML = " This is courage from you , great answer<br/> ";
+            
+        }//end if
+
+        if(thirdAnswer=="y"){
+            document.getElementById("answers3").innerHTML =" You have a beautiful life waiting for you , great answer <br/>";
+
+        }else{
+            document.getElementById("answers3").innerHTML = " Thinking tires the mind sometimes, great answer <br/>";
+        }//end if
+
+        if(fourthAnswer=="y"){
+            document.getElementById("answers4").innerHTML = " Life is full of excitement, great answer <br/>";
+        }else{
+            document.getElementById("answers4").innerHTML = " Some of adventures are dangerous , great answer <br/>";
+        }//end if
+
+    </script>
+</body>
+</html>
